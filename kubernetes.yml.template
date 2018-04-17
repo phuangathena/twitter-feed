@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+2apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: twitter-feed-v1
@@ -14,7 +14,7 @@ spec:
       labels:
         app: twitter-feed
         commit: ${WERCKER_GIT_COMMIT}
-        color: blue
+        color: green
     spec:
       containers:
       - name: twitter-feed
